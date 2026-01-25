@@ -25,6 +25,7 @@ main{
     background-color: white;
      border-radius: 5px;
      padding: 24px;
+     font-family: monospace;
 }
 
 .bar{
@@ -37,27 +38,42 @@ main{
 
 .inner{
     height: 100%;
-    width: 50%;
-    background-color: rgb(66, 227, 95);
+    width: 0%;
+    background-color: rgb(15, 117, 34);
     border-radius: 10px;
     
 }
 
-button{
-    padding: 10px 20px;
-    background-color: royalblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 20px;
-    z-index: 1;
+.button{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:     20px;
    
 }
-button:active{
-    scale: 0.95;
+.button button{
+    padding: 12px;
+    background-color: #4d66d7;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
 }
 span {
     color: rgb(61, 92, 244);
+
+}
+.button h2{
+    font-size: 40px;
+}
+
+.card p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.button button:active{
+    scale:     0.95;
 }
