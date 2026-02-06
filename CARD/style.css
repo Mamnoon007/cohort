@@ -33,7 +33,7 @@ body{
     background-clip: padding-box, border-box;
     border: 5px solid transparent;
     margin: 5px;
-    animation: Rotate 5s linear infinite;
+    animation: Rotate 2s  infinite;
 
 
 }
