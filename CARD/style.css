@@ -31,11 +31,25 @@ body{
     background: linear-gradient(black)padding-box,
     conic-gradient(from var(--Rotate), black,black, rgb(255, 98, 0), black) border-box;
     background-clip: padding-box, border-box;
-    border: 5px solid transparent;
+    border: 0px solid transparent;
     margin: 5px;
-    animation: Rotate 2s  infinite;
+    animation: Rotate 5s ;
+    animation-iteration-count: infinite;
+    animation-timing-function:  linear;
+    animation play-state: paused;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0px rgb(255, 98, 0);
+    text-shadow: 0 0 0px rgb(255, 98, 0);
 
 
+}
+
+.box:hover{
+    animation-play-state: running;
+    border-width: 5px;
+     box-shadow: 0 0 30px rgb(255, 98, 0);
+     color : rgb(224, 155, 113);
+     text-shadow: 0 0 20px rgb(255, 98, 0);
 }
 
 .box img{
