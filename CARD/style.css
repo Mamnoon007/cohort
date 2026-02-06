@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+
+.box{
+    max-width: 300px;
+    padding-bottom: 5px;
+    padding-inline: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*box-shadow: 0 0 30px rgb(255, 98, 0);*/
+    border-radius: 14px;
+    background: linear-gradient(black)padding-box,
+    conic-gradient(from var(--Rotate), black,black, rgb(255, 98, 0), black) border-box;
+    background-clip: padding-box, border-box;
+    border: 5px solid transparent;
+    margin: 5px;
+    animation: Rotate 5s linear infinite;
+
+
+}
+
+.box img{
+   width: 100%;
+}
+
+@property --Rotate{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes Rotate{
+    from{
+        --Rotate: 0deg;
+    }
+    to{
+        --Rotate: 360deg;
+    }
+}
+  
